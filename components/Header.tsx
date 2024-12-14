@@ -57,6 +57,7 @@ function Header() {
       <BellIcon className='icon'/>
       <PlusIcon className='icon'/>
       <SpeakerWaveIcon className='icon'/>
+      <hr className='h-18 w-6 border-transparent border-l mx-2'/>
     </div>
 
     <div className='ml-5 flex items-center lg:hidden text-black'>
@@ -65,9 +66,12 @@ function Header() {
 
     {/*signin / signout button*/}
 
-    <div className='flex items-center text-black'>
+    <div className='flex items-center text-black space-x-1'>
       <UserCircleIcon className='icon'/>
-      <p className=''>Sign in</p>
+      <button className='flex items-center space-x-2 cursor-pointer hover:underline'>
+      <span>Sign in</span>
+      </button>
+
     </div>
 
     </div>
