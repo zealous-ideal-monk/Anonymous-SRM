@@ -15,8 +15,10 @@ import {
   SparklesIcon,
   SpeakerWaveIcon,
   VideoCameraIcon,
-  GlobeAmericasIcon
+  GlobeAltIcon,
+  UserCircleIcon
 } from '@heroicons/react/24/outline'
+import { Bars3Icon } from '@heroicons/react/20/solid'
 
 function Header() {
   return (
@@ -46,16 +48,28 @@ function Header() {
      <button type='submit' hidden />
      </form>
 
-     <div className='flex  h-12 w-12 text-black'>
+     <div className='items-center space-x-2 hidden lg:inline-flex text-black'>
       <SparklesIcon className='icon ' />
-      <GlobeAmericasIcon className='icon' /> 
+      <GlobeAltIcon className='icon' /> 
       <VideoCameraIcon className='icon' />
-      <hr className='h-10 border border-gray-100'/>
+      <hr className='h-18 border-l border-gray-200 mx-2'/>
       <ChatBubbleLeftIcon className='icon'/>
       <BellIcon className='icon'/>
       <PlusIcon className='icon'/>
       <SpeakerWaveIcon className='icon'/>
     </div>
+
+    <div className='ml-5 flex items-center lg:hidden text-black'>
+      <Bars3Icon className='icon' />
+    </div>
+
+    {/*signin / signout button*/}
+
+    <div className='flex items-center text-black'>
+      <UserCircleIcon className='icon'/>
+      <p className=''>Sign in</p>
+    </div>
+
     </div>
     
   )
